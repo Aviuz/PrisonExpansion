@@ -1,6 +1,6 @@
 <p align="center">
   <a href="releases">
-    <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?style=flat" alt="v0.0.1" />
+    <img src="https://img.shields.io/badge/version-0.0.2-blue.svg?style=flat" alt="v0.0.2" />
   </a>
 </p>
 
