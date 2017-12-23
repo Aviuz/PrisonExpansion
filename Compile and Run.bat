@@ -1,6 +1,6 @@
 :: ========= Build ==========
 
-devenv "D:\Git Repository\Prison Expansion Mod\Source\PrisonExpansion.sln" /build Debug
+devenv "D:\Git Repository\Prison Expansion Mod\Source\Prison Expansion.sln" /build Debug
 
 
 

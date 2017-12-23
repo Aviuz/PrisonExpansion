@@ -4,17 +4,12 @@
     <defName>PrisonExpansion_TakeFromLocker</defName>
     <insertTag>Humanlike_PostDuty</insertTag>
     <insertPriority>90</insertPriority>
-    <thinkRoot Class="PrisonLabor.ThinkNode_Labor">
-      <invert>false</invert>
+    <thinkRoot Class="ThinkNode_Tagger">
+      <tagToGive>ChangingApparel</tagToGive>
       <subNodes>
-        <li Class="ThinkNode_Tagger">
-          <tagToGive>ChangingApparel</tagToGive>
+        <li Class="ThinkNode_ConditionalPrisoner">
           <subNodes>
-            <li Class="ThinkNode_ConditionalPrisoner">
-              <subNodes>
-                <li Class="PrisonExpansion.JobGiver_TakeFromLocker"/>
-              </subNodes>
-            </li>
+            <li Class="PrisonExpansion.JobGiver_TakeFromLocker"/>
           </subNodes>
         </li>
       </subNodes>
