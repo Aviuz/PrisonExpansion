@@ -9,7 +9,7 @@
 </p>
 
 ## Description
-Work in progress
+Work in progress ...
 
 ## Content
 New buildings
