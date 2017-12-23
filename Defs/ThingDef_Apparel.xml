@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Vanilla base -->
+  <ThingDef Name="PrisonExpansion_ApparelBase" Abstract="True">
+    <thingClass>Apparel</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <SellPriceFactor>0.5</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!-- Tailor -->
+  <ThingDef Name="PrisonExpansion_ApparelMakeableBase" ParentName="PrisonExpansion_ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  <!-- Machining -->
+  <ThingDef Name="PrisonExpansion_ArmorMakeableBase" ParentName="PrisonExpansion_ApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  
+  <!-- ===============Onskin============== -->
+  <!--Prison outfit-->
+  <ThingDef ParentName="PrisonExpansion_ApparelMakeableBase">
+    <defName>PrisonExpansion_CPrisonJumpsuit</defName>
+    <label>prison jumpsuit</label>
+    <description>A coverall that is made to easily identify prisoners.</description>
+    <graphicData>
+      <texPath>PrisonerJumpsuit/PRSNR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <costStuffCount>120</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+      <li>PrisonExpansion_Clothing</li>
+    </thingCategories>
+    <statBases>
+      <Mass>0.8</Mass>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.01</ArmorRating_Heat>
+      <Insulation_Cold>-9</Insulation_Cold>
+      <Insulation_Heat>35</Insulation_Heat>
+    </statBases>
+    <generateCommonality>0.3</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Waist</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>PrisonerJumpsuit/PRSNR</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Prisoner</li>
+        <li>Military</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    <equippedStatOffsets>
+      <MoveSpeed>0.0</MoveSpeed>
+    </equippedStatOffsets>
+  </ThingDef>
+</Defs>

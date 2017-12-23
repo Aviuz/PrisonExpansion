@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>PrisonExpansion_Apparel</defName>
+    <label>Prison Apparel</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>PrisonExpansion_Clothing</defName>
+    <label>Prison Clothing</label>
+    <parent>PrisonExpansion_Apparel</parent>
+  </ThingCategoryDef>
+
+</Defs>

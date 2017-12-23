@@ -1,0 +1,6 @@
+Changelog:
+0.0.2
+- added lockers
+- added prioners outfits by ChickenPlucker
+0.0.1
+- init

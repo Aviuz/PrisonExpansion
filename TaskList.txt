@@ -1,0 +1,11 @@
+==============================
+Task List for Prison Expansion
+==============================
+Agenda:
+  + Completed and not added to changelog
+  - Scheduled for implementation
+  * Considered
+==============================
+- lockers
+	- as storage
+	- job, prisoners will wear if inside prison cell, or inside prion area
