@@ -8,6 +8,11 @@
   Prison Expansion mod for RimWorld
 </p>
 
+</p>
+<p align="center">
+    <!--a href=""-->Steam Workshop<!--/a--> | <a href="https://ludeon.com/forums/index.php?topic=40551.0">Ludeon Forums</a>
+</p>
+
 ## Description
 Work in progress ...
 
